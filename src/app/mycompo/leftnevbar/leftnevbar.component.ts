@@ -14,7 +14,7 @@ export class LeftnevbarComponent implements OnInit {
 
  
   constructor(private http:HttpClient,private router:Router) { 
-    this.http.post("www.taxcalculator.somee.com/api/userAllAccountData",{            
+    this.http.post("https://webapi20211205161736.azurewebsites.net/api/userAllAccountData",{            
       id:Sharedata.id
     }).subscribe((d:any)=>{
       
@@ -26,7 +26,7 @@ export class LeftnevbarComponent implements OnInit {
   }
 
   reloadData():any{
-    this.http.post("www.taxcalculator.somee.com/api/userAllAccountData",{            
+    this.http.post("https://webapi20211205161736.azurewebsites.net/api/userAllAccountData",{            
       id:Sharedata.id
     }).subscribe((d:any)=>{
       
@@ -42,7 +42,7 @@ export class LeftnevbarComponent implements OnInit {
 
   }
   delete(Rid:any):any{
-    this.http.post("www.taxcalculator.somee.com/api/deleteReport",{            
+    this.http.post("https://webapi20211205161736.azurewebsites.net/api/deleteReport",{            
       userId:Sharedata.id,
       accountId:Rid
     }).subscribe((d:any)=>{    
