@@ -1,0 +1,140 @@
+<div class="maindiv">
+    <div><h2>Update Report</h2></div>
+    <table>
+        <tr>
+            <td colspan="6">Report title..</td>
+            <td colspan="6" ><input value="{{data[0]['title']}}"   #title class="myinput"></td>
+            
+        </tr>
+    </table>
+    <br>
+    <table>
+        
+        <tr>
+            <th colspan="12" style="align-items: center;"> Income</th>           
+            
+        </tr>
+        
+        <tr>
+            <td colspan="6">Basic Salary</td>
+            <td colspan="6"><input value="{{data[0]['BS']}}"  #BS class="myinput"></td>
+        </tr>
+        
+        <tr>
+            <td colspan="6">Dearness allowance(monthly)</td>
+            <td colspan="6"><input value="{{data[0]['DA']}}"   #DA class="myinput"></td>
+        </tr>
+        <tr>
+            <td colspan="6">House rent allowance(HRA)(monthly)</td>
+            <td colspan="6"><input value="{{data[0]['HRA']}}"  #HRA class="myinput"></td>
+        </tr>
+       
+        <tr>
+            <td colspan="6">Medicval allowance (monthly)</td>
+            <td colspan="6"><input value="{{data[0]['MA']}}"  #MA class="myinput"></td>
+        </tr>
+        <tr>
+            <td colspan="6">Leave Travel allowance(monthly)</td>
+            <td colspan="6"><input value="{{data[0]['LTA']}}"  #LTA class="myinput"></td>
+        </tr>
+        <tr>
+            <td colspan="6">Book and periodical allowance(monthly)</td>
+            <td colspan="6"><input value="{{data[0]['BPA']}}"  #BPA class="myinput"></td>
+        </tr>
+        
+        
+
+    </table>
+    <br><br>
+    <table>
+        <tr>
+            <th colspan="12" style="align-items: center;">exemption</th>           
+            
+        </tr>
+        <tr>
+            <td colspan="6">TDS Exemption(monthly)</td>
+            <td colspan="6"><input value="{{data[0]['TDSE']}}"  #TDSE class="myinput"></td>
+        </tr>
+        <tr>
+            <td colspan="6">HRA Exemption(monthly)</td>
+            <td colspan="6"><input value="{{data[0]['HRAE']}}"  #HRAE class="myinput"></td>
+        </tr>
+        <tr>
+            <td colspan="6">Service tex Exemption(monthly)</td>
+            <td colspan="6"><input value="{{data[0]['STE']}}"  #STE class="myinput"></td>
+        </tr>
+        <tr>
+            <td colspan="6">Tex/Car Exemption(monthly)</td>
+            <td colspan="6"><input value="{{data[0]['TE']}}"  #TE class="myinput"></td>
+        </tr>
+        <tr>
+            <td colspan="6">Educatioin Exemption(monthly)</td>
+            <td colspan="6"><input value="{{data[0]['ELE']}}"  #ELE class="myinput"></td>
+        </tr>
+       
+        <tr>
+            <td colspan="6">Public provident fund Exemption(monthly)</td>
+            <td colspan="6"><input value="{{data[0]['PFE']}}"  #PFE class="myinput"></td>
+        </tr>
+        <tr>
+            <td colspan="6">5 year Exemption(monthly)</td>
+            <td colspan="6"><input value="{{data[0]['FDE']}}"  #FDE class="myinput"></td>
+        </tr>
+    </table>
+    <br><br>
+    <table>
+        <tr>
+            <td colspan="6">standard deduction </td>
+            <td colspan="6"><input value="{{data[0]['std']}}"  #std class="myinput"></td>
+        </tr>
+        <tr>
+            <td colspan="6">Gross salary</td>
+            <td colspan="6"><span ></span></td>
+        </tr>
+        <tr>
+            <td colspan="6">Total Exemption</td>
+            <td colspan="6"><span ></span></td>
+        </tr>
+        <tr>
+            <td colspan="6">Taxable Income</td>
+            <td colspan="6"><span ></span></td>
+        </tr>
+        
+        <tr>
+            <td colspan="6">Tax percentage</td>
+            <td colspan="6"><span ></span></td>
+        </tr>
+        <tr>
+            <td colspan="6">Tax</td>
+            <td colspan="6"><span ></span></td>
+        </tr>
+       
+        
+    </table>
+    <br>
+    <br>
+
+
+<br>
+<br>
+
+   
+        <button class="mybtn" (click)="Calculate(title.value,BS.value,DA.value,HRA.value,LTA.value,MA.value,BPA.value,TDSE.value,HRAE.value,STE.value,TE.value,ELE.value,PFE.value,FDE.value,std.value)">  Calculate</button>
+
+        
+     <button class="mybtn" (click)="saveOnServer(title.value,BS.value,DA.value,HRA.value,LTA.value,MA.value,BPA.value,TDSE.value,HRAE.value,STE.value,TE.value,ELE.value,PFE.value,FDE.value,std.value)">Update</button>
+    
+    
+
+
+  
+      
+        
+        
+   
+    <br>
+    <br><br>
+    
+
+</div>
+

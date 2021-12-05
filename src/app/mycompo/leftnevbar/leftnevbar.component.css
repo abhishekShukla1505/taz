@@ -1,0 +1,27 @@
+.maindiv{
+ height: 100%;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+  background-color: rgb(245, 243, 248);
+
+  
+}
+.container{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  
+
+}
+.mybtn{
+  height: 25px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: rgb(70, 160, 70);
+  color: wheat;
+  padding: 1px;
+  align-items: center;
+}

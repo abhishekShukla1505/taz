@@ -1,0 +1,25 @@
+.maindiv{
+    position:absolute;    
+    height: 10%;
+    width: 100%;  
+    background-color: blueviolet;
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.mya{
+    height: 25px;
+    width: 100px;
+    border: 1px solid wheat;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 15px;color: wheat;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}

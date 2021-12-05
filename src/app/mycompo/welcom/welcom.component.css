@@ -1,0 +1,35 @@
+.maindiv{
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    background-image: url("https://images.unsplash.com/photo-1505664063603-28e48ca204eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size:cover;
+    height: 700px;
+  
+    
+    justify-content: space-evenly;
+    align-content: center;
+    margin-top:5% ;
+    color: rgb(247, 235, 235) ;
+    
+    
+}
+.datadiv{
+  height:100%;
+  
+ 
+  
+}
+.prcidediv{
+    margin-top: 50px;
+    height: 100%;
+
+}
+.mybutton{
+    height:40px;
+    width: 350px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: black;
+    background-color: rgba(115, 228, 228, 0.719);
+}

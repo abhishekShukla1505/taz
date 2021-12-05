@@ -1,0 +1,33 @@
+.maindiv{
+    position:absolute;
+    
+    height: 100%;
+    width: 100%;  
+   
+    background-image: url("https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;color: wheat;
+
+}
+.massage{
+  
+    width: 60%;
+    height: 50%;
+}
+.main{
+    margin-top: 10%;
+    justify-content: center;
+}
+.myinput{
+    height: 30px;
+    width: 350px;
+    border-radius: 5px;
+}
+.mybutton{
+    height: 35px;
+    width: 100px;
+    background-color: rgb(16, 201, 139);
+    border-radius: 5px;
+}

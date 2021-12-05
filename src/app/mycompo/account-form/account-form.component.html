@@ -1,0 +1,128 @@
+<div class="maindiv">
+    <div><h2>Make Report</h2></div>
+    <table>
+        <tr>
+            <td colspan="6">Report title</td>
+            <td colspan="6"><input #title class="myinput"></td>
+            
+        </tr>
+    </table>
+    <br>
+    <table>
+        
+        <tr>
+            <th colspan="12" style="align-items: center;">Income</th>           
+            
+        </tr>
+        
+        <tr>
+            <td colspan="6">Basic Salary(monthly)</td>
+            <td colspan="6"><input  #BS class="myinput"></td>
+        </tr>
+        <tr>
+            <td colspan="6">Dearness allowance(monthly)</td>
+            <td colspan="6"><input  #DA class="myinput"></td>
+        </tr>
+        <tr>
+            <td colspan="6">House rent allowance(HRA)(monthly)</td>
+            <td colspan="6"><input  #HRA class="myinput"></td>
+        </tr>
+       
+        <tr>
+            <td colspan="6">Medicval allowance (monthly)</td>
+            <td colspan="6"><input  #MA class="myinput"></td>
+        </tr>
+        <tr>
+            <td colspan="6">Leave Travel allowance(monthly)</td>
+            <td colspan="6"><input  #LTA class="myinput"></td>
+        </tr>
+        <tr>
+            <td colspan="6">Book and periodical allowance(monthly)</td>
+            <td colspan="6"><input  #BPA class="myinput"></td>
+        </tr>
+        
+        
+
+    </table>
+    <br><br>
+    <table>
+        <tr>
+            <th colspan="12" style="align-items: center;">exemption</th>           
+            
+        </tr>
+        <tr>
+            <td colspan="6">TDS Exemption(monthly)</td>
+            <td colspan="6"><input #TDSE class="myinput"></td>
+        </tr>
+        <tr>
+            <td colspan="6">HRA Exemption(monthly)</td>
+            <td colspan="6"><input #HRAE class="myinput"></td>
+        </tr>
+        <tr>
+            <td colspan="6">Service tex Exemption(monthly)</td>
+            <td colspan="6"><input  #STE class="myinput"></td>
+        </tr>
+        <tr>
+            <td colspan="6">Tex/Car Exemption(monthly)</td>
+            <td colspan="6"><input  #TE class="myinput"></td>
+        </tr>
+        <tr>
+            <td colspan="6">Educatioin Exemption(monthly)</td>
+            <td colspan="6"><input #ELE class="myinput"></td>
+        </tr>
+       
+        <tr>
+            <td colspan="6">Public provident fund Exemption(monthly)</td>
+            <td colspan="6"><input  #PFE class="myinput"></td>
+        </tr>
+        <tr>
+            <td colspan="6">5 year Exemption(monthly)</td>
+            <td colspan="6"><input  #FDE class="myinput"></td>
+        </tr>
+    </table>
+    <br><br>
+    <table>
+        <tr>
+            <td colspan="6">standard deduction </td>
+            <td colspan="6"><input  #std class="myinput"></td>
+        </tr>
+        <tr>
+            <td colspan="6">Gross salary</td>
+            <td colspan="6"><span >{{grossSalary}}</span></td>
+        </tr>
+        <tr>
+            <td colspan="6">Total Exemption</td>
+            <td colspan="6"><span ></span>{{total_exemtion}}</td>
+        </tr>
+        <tr>
+            <td colspan="6">Taxable Income</td>
+            <td colspan="6"><span >{{taxableIncome}}</span></td>
+        </tr>
+        
+        <tr>
+            <td colspan="6">Tax percentage</td>
+            <td colspan="6"><span >{{taxPercent}}</span></td>
+        </tr>
+        <tr>
+            <td colspan="6">Tax</td>
+            <td colspan="6"><span >{{tax}}</span></td>
+        </tr>
+       
+        
+    </table>
+    <br>
+    <br>
+  
+      
+            <button class="mybtn" (click)="Calculate(title.value,BS.value,DA.value,HRA.value,LTA.value,MA.value,BPA.value,TDSE.value,HRAE.value,STE.value,TE.value,ELE.value,PFE.value,FDE.value,std.value)">  Calculate</button>
+
+            
+         <button class="mybtn" (click)="saveOnServer(title.value,BS.value,DA.value,HRA.value,LTA.value,MA.value,BPA.value,TDSE.value,HRAE.value,STE.value,TE.value,ELE.value,PFE.value,FDE.value,std.value)">Save</button>
+        
+        
+   
+    <br>
+    <br><br>
+    
+
+</div>
