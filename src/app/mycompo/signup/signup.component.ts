@@ -17,7 +17,7 @@ export class SignupComponent implements OnInit {
     if(n!==""){
       if(e!==""){
         if(p!=='' && p.length>=6){
-          this.http.post("www.taxcalculator.somee.com/api/users",{
+          this.http.post("https://webapi20211205161736.azurewebsites.net/api/users",{
             userName:n.toString,
             userEmail:e.toString,
             userPassword:p.toString,
