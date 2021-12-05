@@ -32,7 +32,7 @@ export class ReportEditFormComponent implements OnInit, AfterViewInit {
      
      
 
-      this.http.post("https://localhost:44328/api/getAccountlist",{            
+      this.http.post("https://webapi20211205161736.azurewebsites.net/api/getAccountlist",{            
       userId:Sharedata.id,
       accountId:Sharedata.editDataId
     }).subscribe((d:any)=>{    
@@ -109,7 +109,7 @@ export class ReportEditFormComponent implements OnInit, AfterViewInit {
    saveOnServer(_title:any,_BS:any,_DA:any,_HRA:any,_LTA:any,_MA:any,_BPA:any,_TDSE:any,_HRAE:any,_STE:any,_TE:any,_ELE:any,_PFE:any,_FDE:any,_std:any):any{
     
      if(ReportEditFormComponent.flag==1){
-      this.http.post("www.taxcalculator.somee.com/api/updateData",            
+      this.http.post("https://webapi20211205161736.azurewebsites.net/api/updateData",            
         {
           userid: Sharedata.id,
           id:Sharedata.editDataId,
