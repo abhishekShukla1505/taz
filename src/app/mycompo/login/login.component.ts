@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
     
       if(e!==""){
         if(p!=='' && p.length>=6){
-          this.http.post("www.taxcalculator.somee.com/api/login",{            
+          this.http.post("https://webapi20211205161736.azurewebsites.net/api/login",{            
             userEmail:e,
             userPassword:p,
           }).subscribe((data:any)=>{
